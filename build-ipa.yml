@@ -26,9 +26,9 @@ jobs:
             NFCTools:
               type: application
               platform: iOS
-              sources: [NFC Tools]
+              sources: [NFCTools]
               entitlements:
-                path: NFC Tools/NFCTools.entitlements
+                path: NFCTools/NFCTools.entitlements
               settings:
                 base:
                   PRODUCT_BUNDLE_IDENTIFIER: com.nfctools.app
@@ -36,7 +36,7 @@ jobs:
                   CURRENT_PROJECT_VERSION: 1
                   SWIFT_VERSION: 5.9
                   TARGETED_DEVICE_FAMILY: "1"
-                  INFOPLIST_KEY_NFCReaderUsageDescription: Приложение использует NFC для чтения и записи меток.
+                  INFOPLIST_KEY_NFCReaderUsageDescription: App uses NFC to read and write tags.
                   INFOPLIST_KEY_UILaunchScreen_Generation: YES
           EOF
           xcodegen
